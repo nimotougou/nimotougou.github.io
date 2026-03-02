@@ -24,6 +24,3 @@ Also affiliated with the Graduate School of Economics at The University of Tokyo
   Sauna
 - 日本酒・ベルギービール  
   Japanese sake & Belgian beer
-
-
-By the way, you might notice something about my name. Yes! All letters are lower cases! Please do not call me a stupid guy. It just shows I do not have any capital. Please donate me. I beg you.

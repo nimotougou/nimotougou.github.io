@@ -11,9 +11,6 @@ main:
 
   - title: "Accounts"
     url: /sns/
-    
-  - title: "CV"
-    url: /cv/
-    
+
 #  - title: "Guide"
 #    url: /markdown/

@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-Under construction.
+This page is being prepared.
