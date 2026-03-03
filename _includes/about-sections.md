@@ -1,29 +1,16 @@
-## 自己紹介 (About Me)
+## About Me
 
-株式会社QueeenBのCEOを務める。東京大学経済学研究科にも所属。
+I currently serve as CEO of QueeenB, Inc. and am also affiliated with the Graduate School of Economics at The University of Tokyo.
 
-Currently serving as CEO of QueeenB, Inc.  
-Also affiliated with the Graduate School of Economics at The University of Tokyo.
+## Interests
 
-## 興味・関心分野 (Interests)
+- Economics (Industrial Organization)
+- Metascience
 
-- 経済学（産業組織論）  
-  Economics (Industrial Organization)
-- メタサイエンス  
-  Metascience
+## Hobbies
 
-## 趣味・好きなこと (Interests & Hobbies)
-
-- スポーツ観戦（特に陸上、野球、バスケ、サッカー）  
-  Watching sports (Track & Field, Baseball, Basketball, Soccer)
-- 読書  
-  Reading
-- スノボ  
-  Snowboarding
-- サウナ  
-  Sauna
-- 日本酒・ベルギービール  
-  Japanese sake & Belgian beer
-
-
-By the way, you might notice something about my name. Yes! All letters are lower cases! Please do not call me a stupid guy. It just shows I do not have any capital. Please donate me. I beg you.
+- Watching sports (Track & Field, Baseball, Basketball, Soccer)
+- Reading
+- Snowboarding
+- Sauna
+- Japanese sake and Belgian beer

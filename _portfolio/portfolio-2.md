@@ -1,32 +1,19 @@
 ---
-title: "The dawn of Decentralized Science (DeSci) in Japan"
-excerpt: "MetaArXivプレプリント。日本のDeSci初期コミュニティを対象に、受容・参入経路・成長障壁を調査。"
+title: "The Dawn of Decentralized Science (DeSci) in Japan"
+excerpt: "MetaArXiv preprint analyzing acceptance, entry pathways, and growth barriers in Japan's early DeSci community."
 collection: portfolio
 order: 2
 medium: preprint
 ---
 
-**日本語**
+This preprint presents an early empirical snapshot of DeSci adoption in Japan.
 
-日本のDeSciコミュニティを対象にした調査研究です。  
-2024年春に37名へ実施した調査をもとに、次の点を整理しています。
+Based on a 37-participant survey (Spring 2024), it highlights:
 
-- DeSciの定義・価値への受容（約95%が概ね妥当と評価）
-- 参入経路（暗号資産・DAO経由に加え、研究エコシステム改善への関心）
-- 成長上の課題（認知不足、継続参加の難しさ、人材多様性の不足、規制の不確実性）
+- strong value-level alignment with DeSci principles
+- entry pathways from crypto/DAO exposure and research-system reform interests
+- growth barriers including low awareness, retention challenges, talent diversity gaps, and regulatory uncertainty
 
-あわせて、オープンサイエンスとの接続や、日本で実装を進めるための実務的示唆
-（教育、オンボーディング、制度面の整備）を提示しています。
-
-**English**
-
-This preprint provides an early empirical snapshot of DeSci adoption in Japan.  
-Based on a 37-participant survey (Spring 2024), it reports strong value-level alignment alongside practical bottlenecks in awareness, retention, talent diversity, and regulatory clarity.
-
-- Acceptance of DeSci definitions and values (roughly 95% positive alignment)
-- Entry pathways (crypto/DAO exposure plus motivation to improve research ecosystems)
-- Growth barriers (low public awareness, retention challenges, limited talent diversity, and regulatory uncertainty)
-
-It also discusses practical implementation implications in Japan, including training, onboarding, and institutional design.
+It also discusses practical implications for training, onboarding, and institutional implementation.
 
 [Read on OSF (MetaArXiv)](https://osf.io/preprints/metaarxiv/yxj53_v1)
