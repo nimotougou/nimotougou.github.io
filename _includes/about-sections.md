@@ -15,4 +15,4 @@ I currently serve as CEO of QueeenB, Inc. and am also affiliated with the Gradua
 - Sauna
 - Japanese sake and Belgian beer
 
-By the way, you might notice something about my name. Yes, all letters are lower case. It means I do not have any capital.
+By the way, you might notice something about my name. Yes! All letters are lower cases! Please do not call me a stupid guy. It just shows I do not have any capital. Please donate me. I beg you.
