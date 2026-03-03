@@ -201,3 +201,32 @@ body.landing #main {
     opacity: 0;
   }
 }
+
+.masthead__menu-item--lang {
+  padding-left: 0.4rem;
+}
+
+.masthead__language-select {
+  margin: 0 0 0 0.4rem;
+  padding: 0.15rem 1.35rem 0.15rem 0.4rem;
+  min-height: 1.9rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #5b6470;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+}
+
+body.landing .masthead__language-select {
+  color: var(--landing-muted);
+  background-color: var(--landing-surface);
+  border-color: var(--landing-border);
+}
+
+@media (max-width: 48em) {
+  .masthead__language-select {
+    margin-left: 0.2rem;
+    font-size: 0.75rem;
+  }
+}

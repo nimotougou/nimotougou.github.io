@@ -1,4 +1,11 @@
 {% include base_path %}
+{% assign current_lang = "en" %}
+{% assign page_url_prefix = page.url | slice: 0, 4 %}
+{% if page.url == "/ja" or page_url_prefix == "/ja/" %}
+  {% assign current_lang = "ja" %}
+{% elsif page.url == "/id" or page_url_prefix == "/id/" %}
+  {% assign current_lang = "id" %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -15,6 +22,14 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          <li class="masthead__menu-item masthead__menu-item--lang">
+            <label for="language-switcher" class="screen-reader-text">Language selector</label>
+            <select id="language-switcher" class="masthead__language-select" aria-label="Language selector" data-baseurl="{{ site.baseurl | default: '' }}">
+              <option value="en"{% if current_lang == "en" %} selected{% endif %}>EN</option>
+              <option value="ja"{% if current_lang == "ja" %} selected{% endif %}>日本語</option>
+              <option value="id"{% if current_lang == "id" %} selected{% endif %}>Bahasa ID</option>
+            </select>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
