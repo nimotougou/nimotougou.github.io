@@ -14,3 +14,5 @@ I currently serve as CEO of QueeenB, Inc. and am also affiliated with the Gradua
 - Snowboarding
 - Sauna
 - Japanese sake and Belgian beer
+
+By the way, you might notice something about my name. Yes, all letters are lower case. It means I do not have any capital.
