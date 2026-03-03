@@ -4,11 +4,10 @@ permalink: /ja/sns/
 author_profile: false
 ---
 
-日本語版です。
+すべてのSNSハンドル名は `nimotougou` です。
 
-すべてのSNSハンドル名は `nimotougou` です。  
-`nimotougou` は `nemoto` の `nimo` と、昔ミリオタだった頃の `tougou` を合わせた名前です。  
+`nimotougou` という名前は、次の2つを合わせたものです。
+- `nemoto` の `nimo`
+- 昔ミリオタだった頃の `tougou`
+
 もともとは将棋ウォーズ用に作ったハンドルです。
-
-- [英語版 Accounts](/sns/)
-- [日本語トップ](/ja/)

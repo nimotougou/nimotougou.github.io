@@ -4,9 +4,10 @@ permalink: /id/sns/
 author_profile: false
 ---
 
-Coming soon.
+Semua handle SNS saya menggunakan `nimotougou`.
 
-All SNS handles use `nimotougou`.
+Nama `nimotougou` berasal dari dua bagian:
+- `nimo` dari `nemoto`
+- `tougou` dari fase lama saya sebagai military-otaku
 
-- [English Accounts](/sns/)
-- [Bahasa Indonesia Top](/id/)
+Awalnya saya membuat handle ini untuk Shogi Wars.

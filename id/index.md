@@ -1,13 +1,17 @@
 ---
-title: "Bahasa Indonesia"
+layout: single
+title: "kazuki nemoto"
 permalink: /id/
 author_profile: false
+classes: landing
+show_title: false
+splash_text: nimotougou
 ---
 
-Versi Bahasa Indonesia sedang disiapkan. Coming soon.
+<div class="landing-hero">
+  <h1 class="landing-hero__title">kazuki nemoto</h1>
+</div>
 
-- [Writings (ID)](/id/writings/)
-- [Portfolio (ID)](/id/portfolio/)
-- [Accounts (ID)](/id/sns/)
-- [CV (ID)](/id/cv/)
-- [English Top](/)
+<div class="landing-content" markdown="1">
+{% include about-sections-id.md %}
+</div>

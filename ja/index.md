@@ -1,13 +1,17 @@
 ---
-title: "日本語"
+layout: single
+title: "kazuki nemoto"
 permalink: /ja/
 author_profile: false
+classes: landing
+show_title: false
+splash_text: nimotougou
 ---
 
-日本語トップページです。主要ページの日本語版を順次整備しています。
+<div class="landing-hero">
+  <h1 class="landing-hero__title">kazuki nemoto</h1>
+</div>
 
-- [Writings（日本語）](/ja/writings/)
-- [Portfolio（日本語）](/ja/portfolio/)
-- [Accounts（日本語）](/ja/sns/)
-- [CV（日本語）](/ja/cv/)
-- [English Top](/)
+<div class="landing-content" markdown="1">
+{% include about-sections-ja.md %}
+</div>
