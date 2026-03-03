@@ -7,4 +7,4 @@ author_profile: false
 日本語記事ページは整備中です。
 
 英語記事一覧はこちらです。
-- [Writings（English）](/writings/)
+- [Writings（English）](/writings/?lang=en)
