@@ -4,7 +4,7 @@ permalink: /id/writings/
 author_profile: false
 ---
 
-Semua artikel dipublikasikan hanya dalam bahasa Inggris.  
-Saya tidak berencana menulis artikel dalam bahasa Indonesia maupun bahasa Jepang.
+Artikel saat ini dipublikasikan dalam bahasa Inggris.  
+Versi bahasa lain dapat ditambahkan di masa mendatang.
 
 - [Writings (English)](/writings/?lang=en)
