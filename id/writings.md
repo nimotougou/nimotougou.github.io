@@ -4,7 +4,7 @@ permalink: /id/writings/
 author_profile: false
 ---
 
-Halaman tulisan bahasa Indonesia sedang disiapkan.
+Semua artikel dipublikasikan hanya dalam bahasa Inggris.  
+Saya tidak berencana menulis artikel dalam bahasa Indonesia maupun bahasa Jepang.
 
-Daftar tulisan bahasa Inggris tersedia di sini.
 - [Writings (English)](/writings/?lang=en)
