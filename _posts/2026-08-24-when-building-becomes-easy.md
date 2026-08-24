@@ -22,5 +22,11 @@ What, then, is the meaning of fighting together as a startup? To me, it is speed
 <br>
 I am sure none of the time we are spending now will be wasted. Rather, let us keep running toward something more difficult and more meaningful.<br>
 <br>
+> 君子務本，本立而道生。<br>
+> *“The exemplary person attends to the root; when the root is established, the Way grows.”*<br>
+> — Youzi, *The Analects*, Book 1, “Xue Er” 1.2
+
+<br>
+
 Thanks, <br>
 kazu
