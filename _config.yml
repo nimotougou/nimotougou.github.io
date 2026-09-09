@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -147,6 +147,15 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - README.md
+  - package-lock.json
+  - _config.dev.yml
+  - talkmap.py
+  - talkmap.ipynb
+  - markdown_generator
+  - .github
 keep_files:
   - .git
   - .svn
