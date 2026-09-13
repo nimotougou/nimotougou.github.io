@@ -1,5 +1,5 @@
 ---
-title: "When Building Becomes Easy, the Hard Part Moves Elsewhere"
+title: "Aim for Something Harder"
 date: 2026-08-24
 categories: [startup, product, building]
 ---
