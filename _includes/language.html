@@ -1,0 +1,12 @@
+{%- assign current_lang = 'en' -%}
+{%- assign raw_path = page.url -%}
+{%- assign prefix = page.url | slice: 0, 4 -%}
+{%- if prefix == '/ja/' or prefix == '/id/' -%}
+  {%- assign current_lang = page.url | slice: 1, 2 -%}
+  {%- assign raw_path = page.url | remove_first: prefix | prepend: '/' -%}
+{%- endif -%}
+{%- assign labels = site.data.navigation[current_lang] -%}
+{%- assign home_path = '/' -%}
+{%- unless current_lang == 'en' -%}
+  {%- assign home_path = '/' | append: current_lang | append: '/' -%}
+{%- endunless -%}

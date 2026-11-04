@@ -11,3 +11,5 @@ The name `nimotougou` comes from two parts:
 - `tougou` from my old military-otaku phase
 
 I originally created this handle for Shogi Wars.
+
+{% include account-links.html %}

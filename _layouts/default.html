@@ -1,52 +1,19 @@
 ---
 layout: compress
 ---
-
-{% include base_path %}
-
+{% include language.html %}
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ current_lang }}">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-
-  <body{% if page.classes %} class="{{ page.classes }}{% if page.classes contains 'landing' %} landing-loading{% endif %}"{% endif %}>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-    {% if page.classes and page.classes contains 'landing' %}
-    <div id="landing-splash-v2" class="landing-splash" aria-hidden="true">
-      <div class="landing-splash__text" style="--letters: {{ page.splash_text | default: page.title | size }};">{{ page.splash_text | default: page.title }}</div>
+  <body>
+    <a class="skip-link" href="#main">{{ labels.skip }}</a>
+    <div class="site">
+      {% include masthead.html %}
+      {{ content }}
+      <footer class="site-footer">{% include footer.html %}</footer>
     </div>
-    <script>
-      (function() {
-        setTimeout(function() {
-          var splash = document.getElementById("landing-splash-v2");
-          document.body.classList.remove("landing-loading");
-          document.body.classList.add("landing-revealed");
-          if (!splash) return;
-          splash.classList.add("is-hidden");
-          setTimeout(function() {
-            if (splash && splash.parentNode) {
-              splash.parentNode.removeChild(splash);
-            }
-          }, 360);
-        }, 1900);
-      })();
-    </script>
-    {% endif %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
   </body>
 </html>

@@ -1,42 +1,45 @@
 ---
 ---
-
-/*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
-
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
-
-@import "reset";
-@import "base";
-
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
-
-@import "forms";
-
-@import "page";
-@import "archive";
-@import "sidebar";
-
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
-@import "custom";
+/* A single shared reading layout. No theme UI or JavaScript required. */
+* { box-sizing: border-box; }
+html { background: #fff; color: #191919; overflow-wrap: break-word; }
+body { margin: 0; font-family: Georgia, "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 18px; line-height: 1.75; }
+.site { width: calc(100% - 48px); max-width: 680px; margin: 0 auto; padding: 56px 0 32px; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid #191919; outline-offset: 4px; }
+.site-header { margin-bottom: 48px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.8; }
+.site-nav, .language-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.language-nav { margin-top: 12px; color: #555; font-size: 13px; gap: 8px 18px; }
+[aria-current="page"] { font-weight: 600; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.4; font-weight: 600; }
+h1 { margin: 0 0 28px; font-size: 28px; }
+h2 { margin: 36px 0 16px; font-size: 21px; }
+h3 { margin: 28px 0 12px; font-size: 19px; }
+p, ul, ol, dl, blockquote, pre, table { margin: 0 0 22px; }
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 5px; }
+blockquote { margin-left: 0; padding-left: 20px; border-left: 1px solid #ccc; }
+img, video, iframe { max-width: 100%; }
+img, video { height: auto; }
+pre { max-width: 100%; overflow-x: auto; padding: 16px; background: #f7f7f7; }
+code { font-size: .88em; overflow-wrap: anywhere; }
+pre code { overflow-wrap: normal; }
+table { width: 100%; border-collapse: collapse; font-size: .9em; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; overflow-wrap: anywhere; }
+hr { border: 0; border-top: 1px solid #ddd; margin: 32px 0; }
+.page-date { font-size: 14px; color: #555; margin: -8px 0 20px; }
+.archive-entry { margin: 28px 0; }
+.archive-entry h3 { margin-bottom: 12px; }
+.post-navigation { display: grid; gap: 16px; margin-top: 48px; font-size: 16px; }
+.site-footer { margin-top: 64px; color: #555; font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.site-footer p { margin: 0; }
+.skip-link { position: absolute; left: 24px; top: -100px; background: #fff; padding: 8px; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 480px) {
+  .site { width: calc(100% - 40px); padding-top: 28px; }
+  .site-header { margin-bottom: 36px; }
+  body { font-size: 17px; }
+  h1 { font-size: 26px; }
+}
+@media print { .site-header, .site-footer, .skip-link, .post-navigation { display: none; } .site { width: 100%; padding: 0; } }

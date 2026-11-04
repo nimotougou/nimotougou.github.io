@@ -1,16 +1,5 @@
-## Tentang Saya
-
 Saya menjabat sebagai CEO QueeenB, Inc. dan juga berafiliasi dengan Graduate School of Economics, The University of Tokyo.
 
-## Minat Akademik
+Minat akademik saya adalah ekonomi (Industrial Organization) dan metascience.
 
-- Ekonomi (Industrial Organization)
-- Metascience
-
-## Hobi
-
-- Menonton olahraga (atletik, baseball, basket, sepak bola)
-- Membaca
-- Snowboarding
-- Sauna
-- Sake Jepang dan bir Belgia
+Hobi saya meliputi menonton olahraga (atletik, baseball, basket, sepak bola), membaca, snowboarding, sauna, serta sake Jepang dan bir Belgia.

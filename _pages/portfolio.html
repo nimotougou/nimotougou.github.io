@@ -3,7 +3,6 @@ layout: archive
 title: "Portfolio"
 permalink: /portfolio/
 author_profile: false
-show_title: false
 ---
 
 {% include base_path %}
@@ -13,20 +12,20 @@ show_title: false
 <h2 class="archive__subtitle">Translations</h2>
 {% for post in portfolio_sorted %}
   {% if post.medium == "translation" %}
-    {% include archive-single.html %}
+    {% include archive-single.html heading="h3" %}
   {% endif %}
 {% endfor %}
 
 <h2 class="archive__subtitle">Preprints</h2>
 {% for post in portfolio_sorted %}
   {% if post.medium == "preprint" %}
-    {% include archive-single.html %}
+    {% include archive-single.html heading="h3" %}
   {% endif %}
 {% endfor %}
 
 <h2 class="archive__subtitle">Journal Articles</h2>
 {% for post in portfolio_sorted %}
   {% if post.medium == "journal" %}
-    {% include archive-single.html %}
+    {% include archive-single.html heading="h3" %}
   {% endif %}
 {% endfor %}

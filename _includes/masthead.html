@@ -1,38 +1,8 @@
-{% include base_path %}
-{% assign current_lang = "en" %}
-{% assign page_url_prefix = page.url | slice: 0, 4 %}
-{% if page.url == "/ja" or page_url_prefix == "/ja/" %}
-  {% assign current_lang = "ja" %}
-{% elsif page.url == "/id" or page_url_prefix == "/id/" %}
-  {% assign current_lang = "id" %}
-{% endif %}
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-          <li class="masthead__menu-item masthead__menu-item--lang">
-            <label for="language-switcher" class="screen-reader-text">Language selector</label>
-            <select id="language-switcher" class="masthead__language-select" aria-label="Language selector" data-baseurl="{{ site.baseurl | default: '' }}">
-              <option value="en"{% if current_lang == "en" %} selected{% endif %}>EN</option>
-              <option value="ja"{% if current_lang == "ja" %} selected{% endif %}>日本語</option>
-              <option value="id"{% if current_lang == "id" %} selected{% endif %}>Bahasa ID</option>
-            </select>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
+<header class="site-header">
+  <nav class="site-nav" aria-label="{{ labels.home }}">
+    <a href="{{ home_path | relative_url }}"{% if raw_path == '/' %} aria-current="page"{% endif %}>{{ labels.home }}</a>
+    <a href="{{ home_path | append: 'writings/' | relative_url }}"{% if raw_path == '/writings/' %} aria-current="page"{% endif %}>{{ labels.writings }}</a>
+    <a href="{{ home_path | append: 'portfolio/' | relative_url }}"{% if raw_path == '/portfolio/' %} aria-current="page"{% endif %}>{{ labels.portfolio }}</a>
+    <a href="{{ home_path | append: 'sns/' | relative_url }}"{% if raw_path == '/sns/' %} aria-current="page"{% endif %}>{{ labels.accounts }}</a>
+  </nav>
+</header>

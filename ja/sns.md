@@ -11,3 +11,5 @@ author_profile: false
 - 昔ミリオタだった頃の `tougou`
 
 もともとは将棋ウォーズ用に作ったハンドルです。
+
+{% include account-links.html %}

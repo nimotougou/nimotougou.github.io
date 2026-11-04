@@ -1,16 +1,26 @@
-# main links links
+# Translated navigation labels; content routes remain unchanged.
 main:
-#  - title: "Publications"
-#    url: /publications/
-
-  - title: "Writings"
+  - title: Writings
     url: /writings/
-
-  - title: "Portfolio"
+  - title: Portfolio
     url: /portfolio/
-
-  - title: "Accounts"
+  - title: Accounts
     url: /sns/
-
-#  - title: "Guide"
-#    url: /markdown/
+en:
+  home: Home
+  writings: Writings
+  portfolio: Portfolio
+  accounts: Accounts
+  skip: Skip to content
+ja:
+  home: ホーム
+  writings: 文章
+  portfolio: 制作・研究
+  accounts: アカウント
+  skip: 本文へ移動
+id:
+  home: Beranda
+  writings: Tulisan
+  portfolio: Portofolio
+  accounts: Akun
+  skip: Langsung ke isi

@@ -11,3 +11,5 @@ Nama `nimotougou` berasal dari dua bagian:
 - `tougou` dari fase lama saya sebagai military-otaku
 
 Awalnya saya membuat handle ini untuk Shogi Wars.
+
+{% include account-links.html %}
