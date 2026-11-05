@@ -1,4 +1,7 @@
 ---
+slug: aim-for-something-harder
+redirect_from:
+  - "/startup/product/building/when-building-becomes-easy/"
 title: "Aim for Something Harder"
 date: 2026-08-24
 categories: [startup, product, building]

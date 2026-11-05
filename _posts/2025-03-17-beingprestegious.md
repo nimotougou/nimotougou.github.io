@@ -1,4 +1,7 @@
 ---
+slug: raise-your-profile
+redirect_from:
+  - "/award/beingprestegious/"
 title: "Raise your profile by raising others"
 date: 2025-03-17
 categories: [award]

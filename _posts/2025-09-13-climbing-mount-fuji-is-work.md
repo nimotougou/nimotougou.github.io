@@ -1,4 +1,7 @@
 ---
+slug: mount-fuji
+redirect_from:
+  - "/essay/climbing-mount-fuji-is-work/"
 title: 'Climbing Mount Fuji Is "Work"'
 date: 2025-09-13
 categories: [essay]
