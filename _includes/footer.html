@@ -1,0 +1,13 @@
+<p>&copy; {{ site.time | date: '%Y' }} {{ site.name }} · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  <nav class="language-nav" aria-label="Language">
+    {% for language in site.data.languages %}
+      {% assign lang = language[0] %}
+      {% assign target = '/' %}
+      {% unless lang == 'en' %}{% assign target = '/' | append: lang | append: '/' %}{% endunless %}
+      {% assign candidate = target %}
+      {% if raw_path != '/' %}{% assign candidate = target | append: raw_path | replace: '//', '/' %}{% endif %}
+      {% assign translated_page = site.pages | where: 'url', candidate | first %}
+      {% if translated_page %}{% assign target = candidate %}{% endif %}
+      <a href="{{ target | relative_url }}" lang="{{ lang }}" hreflang="{{ lang }}"{% if lang == current_lang %} aria-current="true"{% endif %}>{{ language[1] }}</a>
+    {% endfor %}
+  </nav>

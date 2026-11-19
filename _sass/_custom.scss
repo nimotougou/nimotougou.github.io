@@ -1,0 +1,232 @@
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  --landing-bg: #ffffff;
+  --landing-surface: #ffffff;
+  --landing-border: #e5e7eb;
+  --landing-text: #111827;
+  --landing-muted: #5b6470;
+}
+
+.masthead__inner-wrap {
+  max-width: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#main {
+  max-width: none;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.page,
+.archive {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  display: none !important;
+}
+
+.list__item {
+  padding-right: 0 !important;
+}
+
+.landing-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #f5f5f5;
+}
+
+.landing-splash.is-hidden {
+  opacity: 0;
+  transition: opacity 360ms ease;
+}
+
+.landing-splash__text {
+  --letters: 10;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0ch;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: clamp(2.4rem, 9vw, 6rem);
+  font-weight: 500;
+  letter-spacing: clamp(0.25rem, 1.8vw, 0.5rem);
+  text-transform: lowercase;
+  border-right: 0.08em solid currentColor;
+  animation:
+    landingType 1.2s steps(var(--letters), end) 0.2s forwards,
+    splashCaret 0.8s steps(1, end) infinite;
+}
+
+body.landing-loading {
+  background: #000;
+}
+
+body.landing-loading #main,
+body.landing-loading .page__footer {
+  display: none !important;
+}
+
+body.landing {
+  background: var(--landing-bg);
+  color: var(--landing-text);
+}
+
+body.landing .masthead,
+body.landing .greedy-nav {
+  background: var(--landing-surface);
+  border: 0;
+}
+
+body.landing .masthead__inner-wrap {
+  max-width: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body.landing .masthead a,
+body.landing .greedy-nav a {
+  color: var(--landing-muted);
+}
+
+body.landing .masthead a:hover,
+body.landing .greedy-nav a:hover {
+  color: var(--landing-text);
+}
+
+body.landing .page {
+  background: transparent;
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.landing .landing-hero {
+  position: relative;
+  margin: 1.4rem 0 0.4rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+body.landing .landing-hero::before {
+  display: none;
+}
+
+body.landing .landing-hero__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: clamp(1.6rem, 4.6vw, 2.5rem);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--landing-text);
+  text-shadow: none;
+}
+
+body.landing .landing-content {
+  margin-top: 0.8rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--landing-text);
+}
+
+body.landing .landing-content h2 {
+  color: var(--landing-text);
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+body.landing .landing-content hr {
+  border: 0;
+}
+
+body.landing .sidebar .author__name,
+body.landing .sidebar .author__bio,
+body.landing .sidebar .author__urls {
+  color: var(--landing-text);
+}
+
+body.landing .sidebar .author__urls a {
+  color: var(--landing-muted);
+}
+
+body.landing .sidebar .author__urls a:hover {
+  color: var(--landing-text);
+}
+
+body.landing #main {
+  margin-top: 1.2rem;
+  max-width: none;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes landingType {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: calc(var(--letters) * 1ch);
+  }
+}
+
+@keyframes splashCaret {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.masthead__menu-item--lang {
+  padding-left: 0.4rem;
+}
+
+.masthead__language-select {
+  margin: 0 0 0 0.4rem;
+  padding: 0.15rem 1.35rem 0.15rem 0.4rem;
+  min-height: 1.9rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #5b6470;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+}
+
+body.landing .masthead__language-select {
+  color: var(--landing-muted);
+  background-color: var(--landing-surface);
+  border-color: var(--landing-border);
+}
+
+@media (max-width: 48em) {
+  .masthead__language-select {
+    margin-left: 0.2rem;
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,15 @@
+---
+title: "Writings"
+layout: archive
+permalink: /writings/
+author_profile: false
+redirect_from:
+  - /wordpress/blog-posts/
+---
+
+All articles on this site are currently published in English.
+
+{% include base_path %}
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}

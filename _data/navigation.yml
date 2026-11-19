@@ -1,0 +1,56 @@
+# Translated navigation labels; content routes remain unchanged.
+main:
+  - title: Writings
+    url: /writings/
+  - title: Portfolio
+    url: /portfolio/
+  - title: Accounts
+    url: /sns/
+en:
+  home: Home
+  writings: Writings
+  portfolio: Portfolio
+  accounts: Accounts
+  skip: Skip to content
+ja:
+  home: ホーム
+  writings: 文章
+  portfolio: 制作・研究
+  accounts: アカウント
+  skip: 本文へ移動
+id:
+  home: Beranda
+  writings: Tulisan
+  portfolio: Portofolio
+  accounts: Akun
+  skip: Langsung ke isi
+es:
+  home: Inicio
+  writings: Escritos
+  portfolio: Portafolio
+  accounts: Cuentas
+  skip: Saltar al contenido
+fr:
+  home: Accueil
+  writings: Écrits
+  portfolio: Portfolio
+  accounts: Comptes
+  skip: Aller au contenu
+pt:
+  home: Início
+  writings: Textos
+  portfolio: Portfólio
+  accounts: Contas
+  skip: Ir para o conteúdo
+de:
+  home: Startseite
+  writings: Texte
+  portfolio: Portfolio
+  accounts: Profile
+  skip: Zum Inhalt springen
+sw:
+  home: Mwanzo
+  writings: Maandishi
+  portfolio: Kazi
+  accounts: Akaunti
+  skip: Ruka hadi kwenye maudhui
