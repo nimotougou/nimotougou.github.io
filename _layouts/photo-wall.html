@@ -6,15 +6,22 @@ layout: default
   <div class="photo-wall">
     {% assign formats = '.jpg,.jpeg,.png,.webp,.avif,.gif' | split: ',' %}
     {% assign files = site.static_files | sort: 'path' %}
+    {% assign count = 0 %}
     {% for file in files %}
       {% assign directory = file.path | split: '/' | pop | join: '/' %}
       {% assign extension = file.extname | downcase %}
       {% if directory == '/images/photos' and formats contains extension %}
         {% assign filename = file.name | url_encode | replace: '+', '%20' %}
         {% assign source = '/images/photos/' | append: filename | relative_url | escape %}
-        <a href="{{ source }}"><img src="{{ source }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' | escape }}" decoding="async"></a>
+        {% assign slot = count | modulo: 5 %}
+        {% if slot == 0 %}<div class="photo-mosaic">{% endif %}
+        <a href="{{ source }}"><img src="{{ source }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' | escape }}" decoding="async"{% if count >= 5 %} loading="lazy"{% endif %}></a>
+        {% assign count = count | plus: 1 %}
+        {% if slot == 4 %}</div>{% endif %}
       {% endif %}
     {% endfor %}
+    {% assign remainder = count | modulo: 5 %}
+    {% if remainder != 0 %}</div>{% endif %}
   </div>
   <dialog class="photo-viewer" aria-label="{{ page.title }}">
     <button type="button" autofocus aria-label="{{ page.close_label }}">×</button>
