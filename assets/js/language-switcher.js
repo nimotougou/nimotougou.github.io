@@ -1,7 +1,7 @@
 (function () {
   var STORAGE_KEY = "preferred_lang";
   var SUPPORTED_LANGS = ["en", "ja", "id", "es", "fr", "pt", "de", "sw"];
-  var SUPPORTED_RAW_PATHS = ["/", "/writings/", "/portfolio/", "/sns/", "/cv/"];
+  var SUPPORTED_RAW_PATHS = ["/", "/writings/", "/portfolio/", "/photos/", "/sns/", "/cv/"];
 
   var select = document.getElementById("language-switcher");
   if (!select) return;

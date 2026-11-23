@@ -7,48 +7,56 @@ main:
   - title: Accounts
     url: /sns/
 en:
+  photos: Photos
   home: Home
   writings: Writings
   portfolio: Portfolio
   accounts: Accounts
   skip: Skip to content
 ja:
+  photos: 写真
   home: ホーム
   writings: 文章
   portfolio: 制作・研究
   accounts: アカウント
   skip: 本文へ移動
 id:
+  photos: Foto
   home: Beranda
   writings: Tulisan
   portfolio: Portofolio
   accounts: Akun
   skip: Langsung ke isi
 es:
+  photos: Fotos
   home: Inicio
   writings: Escritos
   portfolio: Portafolio
   accounts: Cuentas
   skip: Saltar al contenido
 fr:
+  photos: Photos
   home: Accueil
   writings: Écrits
   portfolio: Portfolio
   accounts: Comptes
   skip: Aller au contenu
 pt:
+  photos: Fotos
   home: Início
   writings: Textos
   portfolio: Portfólio
   accounts: Contas
   skip: Ir para o conteúdo
 de:
+  photos: Fotos
   home: Startseite
   writings: Texte
   portfolio: Portfolio
   accounts: Profile
   skip: Zum Inhalt springen
 sw:
+  photos: Picha
   home: Mwanzo
   writings: Maandishi
   portfolio: Kazi

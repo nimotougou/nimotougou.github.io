@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<main id="main" tabindex="-1">
+  <h1>{{ page.title }}</h1>
+  <div class="photo-wall">
+    {% assign formats = '.jpg,.jpeg,.png,.webp,.avif,.gif' | split: ',' %}
+    {% assign files = site.static_files | sort: 'path' %}
+    {% for file in files %}
+      {% assign directory = file.path | split: '/' | pop | join: '/' %}
+      {% assign extension = file.extname | downcase %}
+      {% if directory == '/images/photos' and formats contains extension %}
+        {% assign filename = file.name | url_encode | replace: '+', '%20' %}
+        {% assign source = '/images/photos/' | append: filename | relative_url | escape %}
+        <a href="{{ source }}"><img src="{{ source }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' | escape }}" decoding="async"></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <dialog class="photo-viewer" aria-label="{{ page.title }}">
+    <button type="button" autofocus aria-label="{{ page.close_label }}">×</button>
+    <img alt="">
+  </dialog>
+</main>
+<script src="{{ '/assets/js/photo-wall.js' | relative_url }}" defer></script>

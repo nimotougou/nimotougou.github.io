@@ -10,7 +10,7 @@ layout: compress
   </head>
   <body>
     <a class="skip-link" href="#main">{{ labels.skip }}</a>
-    <div class="site">
+    <div class="site{% if page.layout == 'photo-wall' %} site--photos{% endif %}">
       {% include masthead.html %}
       {{ content }}
       <footer class="site-footer">{% include footer.html %}</footer>

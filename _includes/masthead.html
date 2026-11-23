@@ -3,6 +3,7 @@
     <a href="{{ home_path | relative_url }}"{% if raw_path == '/' %} aria-current="page"{% endif %}>{{ labels.home }}</a>
     <a href="{{ home_path | append: 'writings/' | relative_url }}"{% if raw_path == '/writings/' %} aria-current="page"{% endif %}>{{ labels.writings }}</a>
     <a href="{{ home_path | append: 'portfolio/' | relative_url }}"{% if raw_path == '/portfolio/' %} aria-current="page"{% endif %}>{{ labels.portfolio }}</a>
+    <a href="{{ home_path | append: 'photos/' | relative_url }}"{% if raw_path == '/photos/' %} aria-current="page"{% endif %}>{{ labels.photos }}</a>
     <a href="{{ home_path | append: 'sns/' | relative_url }}"{% if raw_path == '/sns/' %} aria-current="page"{% endif %}>{{ labels.accounts }}</a>
   </nav>
 </header>
